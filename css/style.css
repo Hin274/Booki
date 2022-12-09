@@ -1,0 +1,804 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ---------------------- header styling ---------------------- */
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------- nav styling ----------- */
+
+nav {
+  margin: 0px 10px;
+}
+
+.headerContainer a {
+  text-decoration: none;
+  color: #0065fc;
+  font-weight: 600;
+  display: block;
+  padding: 10px 30px;
+}
+
+.headerContainer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.headerContainer li {
+  float: left;
+  flex: auto;
+}
+
+/* ----------- header text styling ----------- */
+
+.h2style {
+  font-size: 20px;
+}
+
+.pstyle {
+  margin: -10px 0px 0px 0px;
+}
+
+/* ----------- logo styling ----------- */
+.logoSize {
+  width: 85px;
+  height: 45px;
+}
+
+/* ----------- search styling ----------- */
+
+#locationIconStyle {
+  padding: 16px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+}
+
+form.searchContainer {
+  margin: 20px 0px;
+}
+
+form.searchContainer input[type="text"] {
+  border-style: solid;
+  border-color: #f2f2f2;
+  padding: 13px;
+  position: relative;
+  bottom: 1px;
+  font-weight: bold;
+}
+
+form.searchContainer ::placeholder {
+  color: black;
+}
+
+form.searchContainer button {
+  border-style: none;
+  border-radius: 0px 10px 10px 0px;
+  padding: 15px;
+  position: relative;
+  right: 5px;
+  bottom: 1px;
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+}
+
+form.searchContainer button:hover {
+  background-color: #deebff;
+}
+
+/* ----------- filter styling ----------- */
+
+.filterContainer {
+  display: flex;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.filterTextStyle {
+  font-weight: bold;
+}
+
+.filterButtons {
+  padding: 0px 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.filterContainer i {
+  border-style: none;
+  border-radius: 25px;
+  padding: 17px;
+  color: #0065fc;
+  background-color: #deebff;
+  margin: -3px 0px;
+  position: relative;
+  right: 15px;
+}
+
+.filterContainer button {
+  border-style: solid;
+  border-left-style: none;
+  border-radius: 25px;
+  border-color: #f2f2f2;
+  background-color: white;
+  padding: 1px 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.filterContainer button:hover {
+  background-color: #deebff;
+}
+
+/* ----------- info text styling ----------- */
+
+.infoContainer {
+  display: flex;
+  width: 50%;
+  margin: 0px 10px;
+}
+
+.infoContainer i {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: #f2f2f2;
+  color: #0065fc;
+  padding: 10px 14px 10px 10px;
+  margin: -5px 0px;
+}
+
+.infoContainer :nth-child(1) {
+  width: 5%;
+}
+
+.infoContainer :nth-child(2) {
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+/* ---------------------- main styling ---------------------- */
+
+.accommodationAndMostPopularContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------- accommodation styling ----------- */
+
+.accommodationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  padding: 30px;
+  background-color: #f2f2f2;
+  width: 65%;
+}
+
+.accommodationTitle {
+  margin: 20px 20px 10px 20px;
+  flex: 1 1 100%;
+}
+
+.accommodationCard {
+  flex-grow: 1;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: white;
+  margin: 20px;
+}
+
+.accommodationCard:hover {
+  box-shadow: 3px 8px 16px 3px #deebff;
+  color: #0065fc;
+}
+
+.accommodationCard a {
+  text-decoration: none;
+  color: black;
+}
+
+.accommodationCard img {
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.accommodationCardContainer {
+  padding: 0px 10px;
+  margin: -10px 0px;
+}
+
+.accommodationCardContainer i {
+  color: #0065fc;
+}
+
+.greyStar {
+  color: #f2f2f2 !important;
+}
+
+.showMoreTitle {
+  flex: 1 1 100%;
+  margin: 20px 20px 20px 20px;
+}
+
+.showMoreTitle a {
+  text-decoration: none;
+  color: black;
+}
+
+.showMoreTitle a:hover {
+  color: #0065fc;
+}
+
+/* ----------- most popular styling ----------- */
+
+.mostPopularContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 0px 50px;
+  background-color: #f2f2f2;
+  width: 30%;
+}
+
+.mostPopulartitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0px -10px 0px;
+}
+
+#mostPopularStar {
+  align-self: center;
+  font-size: 20px;
+}
+
+.mostPopularCard {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: 190px;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: white;
+  margin: 20px 0px;
+}
+
+.mostPopularCard:hover {
+  box-shadow: 3px 8px 16px 3px #deebff;
+  color: #0065fc;
+}
+
+.mostPopularCard a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.mostPopularCard img {
+  border-radius: 25px 0px 0px 25px;
+  width: 38%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.mostPopularCardContainer {
+  width: 60%;
+  margin: 0px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mostPopularCardContainer i {
+  color: #0065fc;
+}
+
+/* ----------- activities styling ----------- */
+
+.activitiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+.activitiesTitle {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.activitiesCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: space-between;
+  gap: 20px;
+}
+
+.activitiesCard div {
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px 0px;
+  width: 23%;
+}
+
+.activitiesCard div:hover {
+  box-shadow: 3px 8px 16px 3px #deebff;
+  color: #0065fc;
+}
+
+.activitiesCard img {
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.activitiesCard a {
+  text-decoration: none;
+  color: black;
+}
+
+.activitiesContainer h3 {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* ----------- footer styling ----------- */
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.footerContainer {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.footerContainer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footerContainer li {
+  margin: 10px 0px;
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.footerContainer a:active {
+  color: #0065fc;
+}
+
+/*Above screenwidth is the computer */
+@media screen and (min-width: 992px) {
+  /* ---------------------- header styling ---------------------- */
+
+  header {
+    padding: 40px 40px 10px 40px;
+  }
+
+  /* ----------- nav styling ----------- */
+  .headerContainer a:hover {
+    border-top-style: solid;
+    padding-top: 48px;
+    margin-top: -41px;
+  }
+
+  /* ----------- search styling ----------- */
+  i.hide {
+    display: none;
+  }
+/* ---------------------- main styling ---------------------- */
+  main {
+    padding: 0px 40px;
+  }
+/* ----------- activities styling ----------- */
+  .activitiesCard {
+    height: 600px;
+  }
+
+  .activitiesCard div {
+    height: 100%;
+  }
+
+  .activitiesCard img {
+    height: 90%;
+  }
+
+  .activitiesCard div.card2Height {
+    height: 59%;
+    flex: 1 1 0px;
+  }
+
+  .activitiesCard div.card3Height {
+    height: 30%;
+    flex: 1 1 0px;
+  }
+
+  .activitiesCard div.card5Height {
+    height: 43%;
+    flex: 1 1 0px;
+  }
+
+  .activitiesCard div.card6Height {
+    height: 45%;
+    flex: 1 1 0px;
+  }
+
+  .activitiesCard img.card2Height{
+    height: 82%;
+  }
+
+  .activitiesCard img.card3Height {
+    height: 70%;
+  }
+
+  .activitiesCard img.card5Height {
+    height: 78%;
+  }
+
+  .activitiesCard img.card6Height {
+    height: 80%;
+  }
+}
+
+/*Between these screenwidth is the tablet */
+@media 
+
+screen and (min-width: 768px) and (max-width: 992px) {
+  /* ---------------------- header styling ---------------------- */
+
+  header {
+    padding: 20px 30px 10px 30px;
+  }
+
+  .headerContainer a:active {
+    background-color: #0065fc;
+    color: white;
+  }
+
+  /* ----------- search styling ----------- */
+
+  i.hide {
+    display: none;
+  }
+  /* ----------- filter styling ----------- */
+  .filterContainer {
+    width: 80%;
+  }
+
+  .filterContainer button {
+    margin: 10px 20px;
+  }
+
+  /* ----------- info text styling ----------- */
+
+  .infoContainer {
+    width: 100%;
+  }
+  /* ---------------------- main styling ---------------------- */
+  .accommodationAndMostPopularContainer {
+    flex-direction: column-reverse;
+  }
+
+  /* ----------- most popular styling ----------- */
+
+  .mostPopularContainer {
+    border-radius: 0px;
+    padding: 30px 100px;
+    width: 100%;
+  }
+
+  .mostPopulartitle {
+    margin: 0px;
+  }
+
+  .mostPopularCard {
+    margin: 10px 0px;
+    height: 200px;
+  }
+
+  .mostPopularCard img {
+    width: 40%;
+  }
+
+  /* ----------- accommodation styling ----------- */
+
+  .accommodationContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 0px;
+    padding: 0px 100px;
+    background-color: white;
+    width: 100%;
+  }
+
+  .accommodationTitle {
+    margin: 30px 0px 10px 0px;
+    flex: 1 1 100%;
+  }
+
+  .accommodationCard {
+    flex-grow: 1;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: white;
+    margin: 10px 0px;
+  }
+
+  .accommodationCard a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .accommodationCard:hover {
+    box-shadow: 3px 8px 16px 3px #deebff;
+    color: #0065fc;
+  }
+
+  .accommodationCard img {
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .accommodationCardContainer {
+    padding: 0px 10px;
+    margin: -10px 0px;
+  }
+
+  .accommodationCardContainer i {
+    color: #0065fc;
+  }
+
+  .showMoreTitle {
+    flex: 1 1 100%;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .showMoreTitle a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .showMoreTitle a:hover {
+    color: #0065fc;
+  }
+
+  /* ----------- activities styling ----------- */
+
+  .activitiesContainer {
+    padding: 0px 100px;
+    flex-direction: column;
+  }
+
+  .activitiesCard {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+  }
+
+  .activitiesCard div {
+    width: 100%;
+    height: 300px;
+  }
+
+  .activitiesCard img {
+    height: 75%;
+  }
+
+  /* ----------- footer styling ----------- */
+
+  .footerContainer {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+  }
+}
+/*Below this screenwidth is the mobile phones */
+@media screen and (max-width: 768px) {
+  /* ---------------------- header styling ---------------------- */
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .headerContainer a:hover {
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    border-color: #0065fc;
+  }
+
+  nav {
+    margin: 0px 0px;
+    width: 100%;
+    padding: 15px 0px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #f2f2f2;
+  }
+
+  .h2style {
+    padding: 0px 20px;
+    width: 80%;
+  }
+
+  .pstyle {
+    padding: 0px 20px;
+  }
+
+  /* ----------- search styling ----------- */
+
+  form.searchContainer {
+    padding: 0px 20px;
+  }
+
+  /* To hide the text and show the icon */
+  form.searchContainer button {
+    font-size: 0px;
+  }
+
+  form.searchContainer i {
+    font-size: initial;
+  }
+
+  /* ----------- filter styling ----------- */
+
+  .filterContainer {
+    flex-wrap: wrap;
+    padding: 0px 20px;
+  }
+
+  .filterContainer button {
+    margin: 10px 0px;
+  }
+
+  .filterTextStyle {
+    width: 100%;
+  }
+
+  .filterButtons {
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  .filterButtons :nth-child(2) {
+    order: 1;
+  }
+  .filterButtons :nth-child(4) {
+    order: 4;
+  }
+
+  /* ----------- info text styling ----------- */
+
+  .infoContainer {
+    width: 100%;
+  }
+
+  .infoContainer :nth-child(1) {
+    flex-basis: 10%;
+  }
+
+  .infoContainer :nth-child(2) {
+    flex: 1 1 auto;
+  }
+
+  /* ---------------------- main styling ---------------------- */
+
+  .accommodationAndMostPopularContainer {
+    flex-direction: column-reverse;
+  }
+
+  /* ----------- most popular styling ----------- */
+
+  .mostPopularContainer {
+    border-radius: 0px;
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  .mostPopulartitle {
+    margin: 0px;
+  }
+
+  .mostPopularCard {
+    margin: 10px 0px;
+    height: 180px;
+  }
+
+  .mostPopularCard img {
+    width: 40%;
+  }
+
+  /* ----------- accommodation styling ----------- */
+
+  .accommodationContainer {
+    flex-direction: column;
+    border-radius: 0px;
+    padding: 0px 20px;
+    background-color: white;
+    width: 100%;
+  }
+
+  .accommodationTitle {
+    margin: 30px 0px 10px 0px;
+  }
+
+  .accommodationCard {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .showMoreTitle {
+    margin: 20px 20px 20px 0px;
+  }
+
+  /* ----------- activities styling ----------- */
+
+  .activitiesContainer {
+    padding: 0px 20px;
+    flex-direction: column;
+  }
+
+  .activitiesCard {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .activitiesCard div {
+    width: 100%;
+    height: 250px;
+  }
+
+  .activitiesCard img {
+    height: 75%;
+  }
+
+  /* ----------- footer styling ----------- */
+
+  .footerContainer {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+}
